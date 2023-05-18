@@ -1,11 +1,13 @@
-import Component from "./components/myFirstComponent/MyFirstComponent"
-import ES7 from "./components/ES7-Snippets/ES7"
+import Component from "./components/MyFirstComponent"
+import ES7 from "./components/ES7"
+import JsxRules from "./components/JsxRules"
 
 const App = () => {
   return (
     <>
       <Component />
       <ES7 />
+      <JsxRules/>
     </>
   )
 }
