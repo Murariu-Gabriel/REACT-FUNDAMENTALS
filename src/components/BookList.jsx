@@ -1,9 +1,13 @@
 import Book from "./Book"
+import "../index.css"
 
 const BookList = () => {
   return (
-    <section>
-        <Book/>
+    <section className="book-list">
+      <Book />
+      <Book />
+      <Book />
+      <Book />
     </section>
   )
 }
