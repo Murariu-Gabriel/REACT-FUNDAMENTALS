@@ -3,6 +3,7 @@ import ES7 from "./components/ES7"
 import JsxRules from "./components/JsxRules"
 import BookList from "./components/BookList"
 import Css from "./components/Css"
+import Props from "./components/Props"
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <JsxRules/>
       <BookList/>
       <Css/>
+      <Props/>
     </>
   )
 }

@@ -1,23 +1,15 @@
-const Book = () => {
+const Book = (props) => {
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={image} alt={title}/>
+      <h3>{title}</h3>
+      <h4>{author}</h4>
+      {console.log(props)}
     </article>
   )
 }
 export default Book
 
-
-const Image = () => {
-  return <img src="../image/image-1.jpg" alt="book" />
-}
-
-const Title = () => {
-  return <h3>Atomic habits</h3>
-}
-
-const Author = () => {
-  return <h3>James Clear</h3>
-}
+const title = "Atomic Habits"
+const image = "../image/image-1.jpg"
+const author = "James Clear"
