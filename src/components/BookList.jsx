@@ -1,18 +1,34 @@
 import Book from "./Book"
 import "../index.css"
 
-// const arr = [{name:"something"},{age:false},]
-const arr = [["ceva"], ["altceva"]]
+
+// 
+
+const firstBook = {
+  author: "David Goggins",
+  title: "Can t hurt me",
+  img: "https://m.media-amazon.com/images/I/81gTRv2HXrL._AC_UF1000,1000_QL80_.jpg",
+}
+const secondBook = {
+  author: "James Clear",
+  title: "Atomic Habits",
+  img: "https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL900_SR900,600_.jpg",
+}
+
 
 const BookList = () => {
   return (
     <section className="book-list">
-      {/* <Book title={"Atomic Habits"}/>
-      <Book title={"alt titlu"}/>
-      <Book title={"si inca un titlu"}/>
-      <Book title={"last title"}/> */}
-      {/* {[<Book title={"last title"} />, <Book title={"last title"} />]} */}
-      {arr.map(el => el)}
+      <Book
+        title={firstBook.title}
+        img={firstBook.img}
+        author={firstBook.author}
+      />
+      <Book
+        title={secondBook.title}
+        img={secondBook.img}
+        author={secondBook.author}
+      />
     </section>
   )
 }
