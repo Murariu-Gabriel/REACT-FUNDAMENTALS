@@ -4,6 +4,7 @@ import JsxRules from "./components/JsxRules"
 import BookList from "./components/BookList"
 import Css from "./components/Css"
 import Props from "./components/Props"
+import NewBookList from "./components/NewBookList"
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <BookList/>
       <Css/>
       <Props/>
+      <NewBookList/>
     </>
   )
 }

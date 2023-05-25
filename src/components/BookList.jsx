@@ -23,7 +23,9 @@ const BookList = () => {
         title={firstBook.title}
         img={firstBook.img}
         author={firstBook.author}
-      />
+      >
+        <p>I am special children</p>
+      </Book>
       <Book
         title={secondBook.title}
         img={secondBook.img}

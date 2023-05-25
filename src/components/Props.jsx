@@ -19,7 +19,7 @@ const Props = () => {
         component multiple times we have to give props to each one of them
       </p>
 
-      <h2>INTERESTING FACT ABOUT COMPONENTS</h2>
+      <h4>INTERESTING FACT ABOUT COMPONENTS</h4>
       <p>
         You can't return an object in react it won't run, like in this case: We
         have a component in which we return a section we open curly brackets to
@@ -54,6 +54,14 @@ const Props = () => {
         <br />
         Or we can destructure as parameter
         {`const Component = ({propEl1, propEl2, propEl3}) => {}`}
+      </p>
+
+      <h2>Children prop</h2>
+
+      <p>So apparently Components are not only self closed when can also have opening and closing tags and inside them we can place children props. <br /><br />
+      Example: {"<Component> <p> I am a children prop </p> </Component>"} <br /><br />
+      After that you need to destructure it with the others and place in in your component <br />
+      - An interesting fact is that you must must must call it children otherwise it won't work
       </p>
     </section>
   )
