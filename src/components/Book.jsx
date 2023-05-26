@@ -1,12 +1,14 @@
 const Book = (props) => {
-  const {title, img, author, children} = props
+  const {author, title, img, id, children } = props
+  // console.log(props.book)
+  // console.log(props)
   return (
-    <article className="book">
+    <article key={id} className="book">
       <img src={img} alt={title}/>
       <h3>{title}</h3>
       <h4>{author}</h4>
       {console.log(title)}
-      {children}
+      {/* {children} */}
     </article>
   )
 }
