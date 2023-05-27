@@ -23,7 +23,7 @@ const array = ["value", "vegan food truck", "hamburger"]
 
 const NewBookList = () => {
   return (
-    <section className="booklist">
+    <section >
       <h2>About react rendering</h2>
       <p>
         Again we can't render objects in react. <br /> <br />
@@ -32,22 +32,29 @@ const NewBookList = () => {
         rendered
       </p>
       {/* {object}  This won t work */}
-      {array.map((el) => {
-        console.log(el)
+      {/* {array.map((el) => {
         return <h5>{el}</h5>
-      })}
+      })} */}
 
       <h3>Proper list</h3>
-      <p>Here we have a method where we map through an array of objects and for each object we return the book component in which we pass the object values by destructuring it above</p>
+      <p>
+        Here we have a method where we map through an array of objects and for
+        each object we return the book component in which we pass the object
+        values by destructuring it above
+      </p>
       <br />
       <p>- Or we can bass the entire object</p>
 
-      {books.map(book => {
-        const {author, title, img } = book
-
-        return <Book book={book} />
+      
+      {books.map((book) => {
+        // const {author, title, img, id } = book
+        // console.log(author, title)
+        return (
+          <div className="book-list">
+            <Book {...book} key={book.id} />
+          </div>
+        )
       })}
-
     </section>
   )
 }
