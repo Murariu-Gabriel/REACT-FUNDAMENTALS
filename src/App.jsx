@@ -5,7 +5,9 @@ import BookList from "./components/BookList"
 import Css from "./components/Css"
 import Props from "./components/Props"
 import NewBookList from "./components/NewBookList"
+import EventExample from "./components/EventExample"
 
+import "./index.css"
 const App = () => {
   return (
     <>
@@ -16,6 +18,7 @@ const App = () => {
       <Css/>
       <Props/>
       <NewBookList/>
+      <EventExample/>
     </>
   )
 }

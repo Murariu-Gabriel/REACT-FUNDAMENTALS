@@ -40,10 +40,10 @@ const NewBookList = () => {
       <p>
         Here we have a method where we map through an array of objects and for
         each object we return the book component in which we pass the object
-        values by destructuring it above
+        values by destructuring it above 
       </p>
       <br />
-      <p>- Or we can bass the entire object</p>
+      <p>- Or we can bass the entire object with spread</p>
 
       
       {books.map((book) => {
