@@ -8,6 +8,7 @@ import NewBookList from "./components/NewBookList"
 import EventExample from "./components/EventExample"
 
 import "./index.css"
+import PropDrilling from "./components/PropDrilling"
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
       <Props/>
       <NewBookList/>
       <EventExample/>
+      <PropDrilling/>
     </>
   )
 }

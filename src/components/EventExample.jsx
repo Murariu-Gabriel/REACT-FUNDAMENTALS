@@ -27,11 +27,43 @@ const EventExample = () => {
 
       <button onClick={handleClick}>Click me to alert</button>
 
-      <form action="" onSubmit={handleFormSubmision}>
+      <form action="">
         <h2>Typical form</h2>
         <input type="text" name="example" onChange={handleFormInput} />
-        <button type="submit">submit</button>
+        <button type="submit" onClick={handleFormSubmision}>
+          submit
+        </button>
       </form>
+
+      <p>
+        Up here we have the form has an event of onSubmit which prevents the
+        form from submiting
+        <br />
+        Another solution would be to add that the handleForm function to the
+        submit button, doing exactly the same thing preventing the form from
+        submiting
+      </p>
+
+      <h2>MIND GRENADE</h2>
+
+      <p>
+        We can use arrow functions inside the tag event listener atribute <br />
+        EXAMPLE: onClick={"{()=>console.log('this is console.log')}"}
+        <br />
+        <button onClick={() => alert("you clicked the button")}>
+          Click me
+        </button>
+        <br />
+        <br />
+        You can even access the event like you would normally outside event
+        <input type="text" onChange={(e) => alert(e.target.value)} />
+        
+      </p>
+
+
+      <h2>SECOND MIND GRENADE</h2>
+
+      <p>If we add a button and an event listener in a component that displays the title of a book for example, that event is set up for that component exclusively meaning that each component we call will have different outputs based on the component prop information</p>
     </section>
   )
 }
