@@ -9,18 +9,20 @@ import EventExample from "./components/EventExample"
 
 import "./index.css"
 import PropDrilling from "./components/PropDrilling"
+import GetBook from "./components/GetBook"
 const App = () => {
   return (
     <>
       <Component />
       <ES7 />
-      <JsxRules/>
-      <BookList/>
-      <Css/>
-      <Props/>
-      <NewBookList/>
-      <EventExample/>
-      <PropDrilling/>
+      <JsxRules />
+      <BookList />
+      <Css />
+      <Props />
+      <NewBookList />
+      <EventExample />
+      <PropDrilling />
+      <GetBook />
     </>
   )
 }

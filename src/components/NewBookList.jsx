@@ -59,3 +59,5 @@ const NewBookList = () => {
   )
 }
 export default NewBookList
+
+export { books }

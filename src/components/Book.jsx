@@ -1,13 +1,23 @@
-const Book = (props, {key}) => {
-  const {author, title, img, children } = props
+const Book = (props) => {
+  const { author, title, img, children, id, displayMessage, findBook } = props
   // console.log(props.book)
   console.log(props)
   return (
-    <article key={key} className="book">
-      <img src={img} alt={title}/>
+    <article key={id} className="book">
+      <img src={img} alt={title} />
       <h3>{title}</h3>
       <h4>{author}</h4>
-      {console.log( title, author)}
+      {displayMessage ? (
+        <button onClick={displayMessage}>message</button>
+      ) : (
+        <></>
+      )}
+      {findBook? (
+        <button onClick={()=> findBook(id)}>find book</button>
+      ) : (
+        <></>
+      )}
+      {console.log(title, author,id)}
       {children}
     </article>
   )
