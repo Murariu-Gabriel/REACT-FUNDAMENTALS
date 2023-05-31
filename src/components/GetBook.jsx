@@ -1,4 +1,4 @@
-import { books } from "./NewBookList"
+import { books } from "./books"
 import Book from "./Book"
 
 const GetBook = () => {
